@@ -1,41 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CodePenChallenge: 403 Forbidden Page</title>
+  <link rel="stylesheet" href="./style.css">
 
-    <link rel="stylesheet" href="css.css">
-    <meta charset="utf-8">
-    <title>403 ERROR</title>
-  <script type="text/javascript">
-    var root = document.documentElement;
-var eyef = document.getElementById('eyef');
-var cx = document.getElementById("eyef").getAttribute("cx");
-var cy = document.getElementById("eyef").getAttribute("cy");
-
-document.addEventListener("mousemove", evt => {
-  let x = evt.clientX / innerWidth;
-  let y = evt.clientY / innerHeight;
-
-  root.style.setProperty("--mouse-x", x);
-  root.style.setProperty("--mouse-y", y);
-
-  cx = 115 + 30 * x;
-  cy = 50 + 30 * y;
-  eyef.setAttribute("cx", cx);
-  eyef.setAttribute("cy", cy);
-
-});
-
-document.addEventListener("touchmove", touchHandler => {
-  let x = touchHandler.touches[0].clientX / innerWidth;
-  let y = touchHandler.touches[0].clientY / innerHeight;
-
-  root.style.setProperty("--mouse-x", x);
-  root.style.setProperty("--mouse-y", y);
-});
-  </script>
-  </head>
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" id="robot-error" viewBox="0 0 260 118.9">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg xmlns="http://www.w3.org/2000/svg" id="robot-error" viewBox="0 0 260 118.9">
             <defs>
                 <clipPath id="white-clip"><circle id="white-eye" fill="#cacaca" cx="130" cy="65" r="20" /> </clipPath>
              <text id="text-s" class="error-text" y="106"> 403 </text>
@@ -57,5 +30,8 @@ document.addEventListener("touchmove", touchHandler => {
           </svg>
 <h1>You are not allowed to enter here</h1>
 <h2>Go <a target="_blank" href="https://www.youtube.com/watch?v=JccW-mLdNe0">Home!</a></h2>
-  </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
 </html>
