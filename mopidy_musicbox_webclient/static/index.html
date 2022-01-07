@@ -1,24 +1,7 @@
 <!DOCTYPE html>
 <html manifest="mb.appcache">
 <head>
-  <SCRIPT language="JavaScript">
-  <!--hide
 
-  var password;
-
-  var pass1="cool";
-
-  password=prompt('Please enter your password to view this page!',' ');
-
-  if (password==pass1)
-  alert('Password Correct! Click OK to enter!');
-  else
-   {
-    window.location="http://brebru.com/extrainfo.html";
-    }
-
-  //-->
-  </SCRIPT>
     <title>{{ title }}</title>
     <meta charset="utf-8">
 
@@ -285,11 +268,7 @@
     </table>
 </div><!--/show track info-->
 
-<div data-role="header" data-tap-toggle="false" id="header" data-position="fixed" class="header-breakpoint headerbtn">
-    <a id="headermenubtn" href="#panel"><i class="fa fa-align-justify"></i></a>
-    <h1 id="contentHeadline"></h1>
-    <a id="headersearchbtn" href="#" onclick="switchContent('search' ); return false;" title="Search"><i class="fa fa-search"></i></a>
-</div>
+
 <!-- /header -->
 
 <div data-role="content" id="homepane" class="pane">
@@ -421,15 +400,9 @@
         </div>
         <div align="right" class="ui-block-b ui-block-b-min">
             <div data-role="controlgroup" data-type="horizontal">
-                <button class="btn" type="button" title="Add a track to the queue" onclick="return controls.showAddTrackPopup();">
-                    <i class="fa fa-plus"></i>
-                </button>
-                <button class="btn" type="button" title="Save queue to playlist" onclick="return controls.showSavePopup();">
-                    <i class="fa fa-bookmark-o"></i>
-                </button>
-                <button class="btn" type="button" title="Clear queue" onclick="return controls.clearQueue();">
-                    <i class="fa fa-times"></i>
-                </button>
+
+
+
             </div>
         </div>
     </div>
@@ -540,9 +513,7 @@
                 <div id="infodetail"></div>
             </div>
         </div>
-        <div class="playicon">
-            <a href="#" onclick="controls.doPlay(); return false"><span id="btplay" title="Play"><i class="fa fa-play"></i></span></a>
-        </div>
+        
     </div>
 </div>
 
